@@ -15,16 +15,27 @@ let button = document.getElementById('button');
 //This variable stores the space to the message
 let buttonMessage = document.getElementById('buttonMessage');
 
-
-
 // This function will choose a random message
 function getRandomMessage() {
     const randomIndex = Math.floor(Math.random() * messages.length);
     const yourMessage = messages[randomIndex];
-    button.innerHTML = 'I am not convinced. Try again.'
+    button.innerHTML = 'I am not convinced. Try again.';
+    iAmCounting();
     buttonMessage.innerHTML = yourMessage;
     
 }
 
 // event listener
 button.onclick = getRandomMessage;
+
+// This variable count the clicks
+let = countingClicks = 0;
+
+// This function will count the clicks
+function iAmCounting() {
+    countingClicks += 1;
+    if (countingClicks >= 2) {
+        button.innerHTML = 'Ok, that\'s enough, come back tomorrow';
+        button.disabled = true;
+    }
+};

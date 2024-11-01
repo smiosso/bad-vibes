@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 h1 {
     font-family: "Parisienne", sans-serif;
     font-size: 104px;
@@ -27,6 +28,7 @@ body {
     justify-content: center;
     align-items: center; 
 }
+
 
 .header {
     text-align: center;
@@ -67,6 +69,30 @@ body {
 .button {
     margin-top: 40px;
 }
+
+#langButton {
+    position: absolute;
+    top: 30px; 
+    right: 30px;
+    padding: 8px 15px;
+    border: 1px solid #F6851F;
+    border-radius: 50px;
+    color: #F6851F;
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #F6851F;
+}
+
+
+#langButton:hover {
+    background-color: #F6851F;
+    color: white;
+}
+
 
 @media (max-width: 768px) {
     body {

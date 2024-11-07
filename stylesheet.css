@@ -112,7 +112,7 @@ body {
         height: 50px;
         font-size: 14px;
     }
-    #buttonMessage {
+    #divMessage {
         width: 250px;
         height: 60px;
         border: none;
@@ -124,6 +124,7 @@ body {
     #langButton {
         padding: 8px; 
         font-size: 12px;
+        right: 15px;
     }
 
 }

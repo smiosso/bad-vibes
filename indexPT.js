@@ -1,5 +1,5 @@
 // This array stores the messages
-const messagesPT = [
+const messages = [
     'As coisas sempre podem piorar.',
     'É só o fim quando piora de vez.',
     'Nada é tão ruim que não possa piorar.',
@@ -26,7 +26,7 @@ let buttonMessage = document.getElementById('buttonMessage');
 // This function will choose a random message
 function getRandomMessage() {
     const randomIndex = Math.floor(Math.random() * messages.length);
-    const yourMessage = messagesPT[randomIndex];
+    const yourMessage = messages[randomIndex];
     button.innerHTML = 'Eu não estou convencido. Tentar de novo.';
     iAmCounting();
     buttonMessage.innerHTML = yourMessage;
@@ -47,3 +47,11 @@ function iAmCounting() {
         button.disabled = true;
     }
 };
+
+// Tis variable get the element
+const langButton = document.getElementById('langButton');
+
+// This function create the event when the user click the langbutton
+langButton.addEventListener('click', function() {
+    window.location.href = 'index.html';
+});

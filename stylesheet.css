@@ -82,15 +82,13 @@ body {
     font-size: 12px;
     cursor: pointer;
 }
-a {
-    text-decoration: none;
-    color: #F6851F;
-}
+
 
 
 #langButton:hover {
     background-color: #F6851F;
     color: white;
+    border: none;
 }
 
 

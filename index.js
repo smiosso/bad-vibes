@@ -20,7 +20,7 @@ const messages = [
 let button = document.getElementById('button');
 
 //This variable stores the space to the message
-let buttonMessage = document.getElementById('buttonMessage');
+let divMessage = document.getElementById('divMessage');
 
 // This function will choose a random message
 function getRandomMessage() {
@@ -28,7 +28,7 @@ function getRandomMessage() {
     const yourMessage = messages[randomIndex];
     button.innerHTML = 'I am not convinced. Try again.';
     iAmCounting();
-    buttonMessage.innerHTML = yourMessage;
+    divMessage.innerHTML = yourMessage;
     
 }
 
